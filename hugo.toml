@@ -231,7 +231,7 @@ Projects
   [params.contact]
   enable = true
   content = "My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!"
-  email = "gurusabarisha@gmail.com"
+  email = "kjayasurya97@gmail.com"
   btnName = "Mail me"
 
 [params.footer.recentPosts]
@@ -242,11 +242,8 @@ enable = true
 disableFeaturedImage = false
 
 [params.footer.socialNetworks]
-github = "https://github.com"
-linkedin = "https://linkedin.com"
-twitter = "https://twitter.com"
-instagram = "https://instagram.com"
-facebook = "https://facebook.com"
+github = "https://github.com/jayasuryajsk"
+linkedin = "https://www.linkedin.com/in/jayasuryajsk/"
 
   [params.listPages]
   disableFeaturedImage = false
