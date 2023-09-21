@@ -29,7 +29,7 @@ weight = 2
 [params]
 title = "Profile"
 description = "Text about my cool site"
-favicon = "/fav.png"
+favicon = "/portfolio.png"
 useBootstrapCDN = false
 animate = true
 
