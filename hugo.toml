@@ -1,0 +1,271 @@
+baseURL = "https://hugo-profile.netlify.app"
+languageCode = "en-us"
+title = "Hug"
+theme = "hugo-profile"
+Paginate = 3
+enableRobotsTXT = true
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+page = [ "HTML", "RSS" ]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[[Menus.main]]
+identifier = "blog"
+name = "Blog"
+title = "Blog posts"
+url = "/blogs"
+weight = 1
+
+[[Menus.main]]
+identifier = "gallery"
+name = "Gallery"
+title = "Blog posts"
+url = "/gallery"
+weight = 2
+
+[params]
+title = "Profile"
+description = "Text about my cool site"
+favicon = "/fav.png"
+useBootstrapCDN = false
+animate = true
+
+  [params.font]
+  fontSize = "1rem"
+  fontWeight = 400
+  lineHeight = 1.5
+  textAlign = "left"
+
+  [params.navbar]
+  align = "ms-auto"
+  brandName = "Profile"
+  disableSearch = false
+
+    [params.navbar.menus]
+    disableAbout = false
+    disableExperience = false
+    disableEducation = false
+    disableProjects = false
+    disableAchievements = false
+    disableContact = false
+
+  [params.hero]
+  enable = true
+  intro = "Hi, my name is"
+  title = "Jaya Surya Kommireddy."
+  subtitle = "Graduate Machine Learning Engineer | Data Analyst"
+  content = "An adept graduate machine learning engineer with hands-on experience and academic excellence. Specialized in AI and data science, I leverage cutting-edge technologies to build intelligent and scalable solutions."
+  image = "/profile-pic.jpg"
+
+    [params.hero.bottomImage]
+    enable = true
+
+    [params.hero.button]
+    enable = true
+    name = "Resume"
+    url = "#"
+    download = true
+    newPage = false
+
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-github"
+url = "https://example.com"
+
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-twitter"
+url = "https://example.com"
+
+[[params.hero.socialLinks.customIcons]]
+icon = "/fav.png"
+url = "https://example.com"
+
+  [params.about]
+  enable = true
+  title = "About Me"
+  image = "/images/me.png"
+  content = """
+I'm a Graduate Machine Learning Engineer with a strong educational background and hands-on experience in the field of data science and machine learning.
+
+ Having completed my Master's in Data Science from the University of Canberra, I have worked at Seeing Machines, contributing to the project vehicle occupant detection.
+ My skills include proficiency in Python, R, PyTorch, and various machine learning libraries. I'm passionate about leveraging data to solve complex problems and make informed decisions.
+"""
+
+
+    [params.about.skills]
+    enable = true
+    title = "Here are a few technologies I've been working with recently:"
+    items = [ "Python", "PyTorch", "R", "Pandas & Scikit learn", "Docker", "Git" ]
+
+  [params.experience]
+  enable = true
+
+    [[params.experience.items]]
+    job = "Machine Learning Intern"
+    company = "Seeing Machines"
+    companyUrl = "https://seeingmachines.com/"
+    date = "Feb 2023 - Jun 2023"
+    content = "I am."
+      [params.experience.items.featuredLink]
+      enable = true
+      name = "View the project"
+      url = "https://example.com"
+
+
+
+
+  [params.education]
+  enable = true
+  index = false
+
+    [[params.education.items]]
+    title = "Master of Data Science with Specialization in AI & Computing"
+    date = "2020 - 2022"
+    GPA = "6.125 out of 7.0"
+    content = """
+Projects
+  - Facial Recognition system.
+  - Path optimization using Genetic Algorithms.
+  - Single Image Super Resolution."""
+
+      [params.education.items.school]
+      name = "University of Canberra, Canberra"
+      url = "https://www.canberra.edu.au/"
+
+    [[params.education.items]]
+    title = "Bachelor of Electronics and Communication Engineering"
+    date = "2014 - 2019"
+    
+
+
+      [params.education.items.school]
+      name = "Vellore Institute of Technology"
+      url = "https://example.org"
+
+
+
+  [params.achievements]
+  enable = true
+
+    [[params.achievements.items]]
+    title = "Google kickstart runner"
+    content = "I solved all problems with optimal solution."
+    url = "https://example.com"
+    image = "/images/achievment.jpg"
+
+    [[params.achievements.items]]
+    title = "Facebook Hackathon Winner"
+    content = "Developed a product using Artificial Intelligence."
+    image = "/images/achievment.jpg"
+
+    [[params.achievements.items]]
+    title = "Hugo Profile"
+    content = "Developed a theme and getting 1K+ downloads per month."
+    url = "https://github.com/gurusabarish/hugo-profile"
+    image = "/images/achievment.jpg"
+
+    [[params.achievements.items]]
+    title = "Microsoft Imagine Runner"
+    content = "We are developed a product which can help others."
+
+    [[params.achievements.items]]
+    title = "Google Summer of Code"
+    content = "Contributed to a open source project."
+    url = "https://example.com"
+
+  [params.projects]
+  enable = true
+
+    [[params.projects.items]]
+    title = "Hugo Profile"
+    content = "A highly customizable and mobile first Hugo template for personal portfolio and blog."
+    image = "/images/projects/profile.png"
+    badges = [ "Hugo", "Bootstrap", "Javascript" ]
+
+      [params.projects.items.featured]
+      name = "Demo"
+      link = "https://hugo-profile.netlify.app"
+
+      [[params.projects.items.links]]
+      icon = "fa fa-envelope"
+      url = "mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f"
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = "https://github.com/gurusabarish/hugo-profile"
+
+      [[params.projects.items.links]]
+      icon = "fab fa-twitter"
+      url = "https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile"
+
+    [[params.projects.items]]
+    title = "Image Converter"
+    content = "A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django."
+    image = "/images/projects/converter.jpg"
+    badges = [ "Django", "Bootstrap" ]
+
+      [params.projects.items.featured]
+      name = "Demo"
+      link = "https://django-converter.herokuapp.com"
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = "https://github.com/gurusabarish/converter"
+
+    [[params.projects.items]]
+    title = "Hugo Profile V2"
+    content = "A clean and simple Hugo template for personal portfolio and blog."
+    image = "/images/projects/profile2.jpg"
+    badges = [ "Hugo", "Bootstrap", "Javascript" ]
+
+      [params.projects.items.featured]
+      name = "Demo V2"
+      link = "https://hugo-profile-2.netlify.app"
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = "https://github.com/gurusabarish/HugoProfileV2"
+
+  [params.contact]
+  enable = true
+  content = "My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!"
+  email = "gurusabarisha@gmail.com"
+  btnName = "Mail me"
+
+[params.footer.recentPosts]
+path = "blogs"
+count = 3
+title = "Recent Posts"
+enable = true
+disableFeaturedImage = false
+
+[params.footer.socialNetworks]
+github = "https://github.com"
+linkedin = "https://linkedin.com"
+twitter = "https://twitter.com"
+instagram = "https://instagram.com"
+facebook = "https://facebook.com"
+
+  [params.listPages]
+  disableFeaturedImage = false
+
+[params.singlePages.readTime]
+enable = true
+content = "min read"
+
+[params.singlePages.scrollprogress]
+enable = true
+
+  [params.terms]
+  read = "Read"
+  toc = "Table Of Contents"
+  copyright = "All rights reserved"
+  pageNotFound = "Page not found"
+  emailText = "Check out this site"
+
+  [params.datesFormat]
+  article = "Jan 2, 2006"
+  articleList = "Jan 2, 2006"
+  articleRecent = "Jan 2, 2006"
